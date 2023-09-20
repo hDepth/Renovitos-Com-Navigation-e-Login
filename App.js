@@ -1,27 +1,74 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth } from "firebase/auth";
+import React, { useState } from "react";
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, } from 'react-native';
+import estilos from './src/css/estilocadastro';
+import app from './src/services/firebase'
 
+export default function Cadastro() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] =  useState('');
 
-const Stack = createStackNavigator();
+    async function createUser() {
 
-import Login from './src/pages/Login';
-import Cadastro from './src/pages/Cadastro';
-import Home from './src/pages/Home';
+        const auth = getAuth(app)
+        await createUserWithEmailAndPassword(auth, email, password)
 
-export default function App() {
-  
+        .then(userCredential => {
+            console.log('cadastrado com sucesso - ', credentials.user.uid);
+
+        })
+	.catch(error => {
+            console.log("ENOENT ERR!", error.code)
+
+            if (error.code == "auth/email-already-in-use"){
+
+                console.log("Esse Email esta em uso");
+
+            }
+
+        });
+
+}
+
     return (
-      <NavigationContainer>
 
-      <Stack.Navigator 
-      initialRouteName="Login">
-        <Stack.Screen name="Cadastro" component={Cadastro} />
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Home" component={Home} />
-      </Stack.Navigator>
+        
+        <View style={estilos.containerPrincipal}>
 
-</NavigationContainer>
-    );
-  }
+        <View>
+            <Text style={estilos.title}></Text>
+        </View>
+
+        <View style={estilos.area}>
+            <Text style={estilos.titleArea}>Cadastro</Text>
+        </View>
+        <View style={estilos.container}>
+
+            <TextInput
+            style={estilos.caixasTexto}
+            placeholder="email"
+            placeholderTextColor="#313131"
+            value={email}
+            onChangeText={value => setEmail(value)}
+
+        />
+        <TextInput
+            style={estilos.caixaSenha}
+            placeholder="senha"
+            placeholderTextColor="#313131"
+            value={password}
+            onChangeText={value => setPassword(value)}
+
+        />
+
+        <TouchableOpacity
+            style={estilos.Botao} 
+            onPress={createUser}
+            title="Logar">
+        </TouchableOpacity>
+        </View>
+        </View>
+    )
+}
 

@@ -5,10 +5,10 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import app from "../../services/firebase";
 
 
-export default function Login( {navigation} ){
+export default function Login(){
 
   const [email, setEmail] = useState('');
-  const [password, setPassword] =  useState('');;
+  const [password, setPassword] =  useState('');
 
 
   async function singnIn() {
@@ -62,7 +62,6 @@ return(
         </TouchableOpacity>
 
         <TouchableOpacity 
-        onPress={() => navigation.navigate('Cadastro')}
         style={estilos.Botao}>
           <Text style={estilos.textoBotao}>não tem uma conta?</Text>
         </TouchableOpacity>

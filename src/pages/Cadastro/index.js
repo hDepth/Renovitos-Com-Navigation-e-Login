@@ -5,7 +5,7 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity, } from 'react-nati
 import estilos from '../../css/estilocadastro';
 import app from "../../services/firebase"
 
-export default function Cadastro({ }) {
+export default function Cadastro() {
     const [email, setEmail] = useState('');
     const [password, setPassword] =  useState('');
 
@@ -64,6 +64,7 @@ export default function Cadastro({ }) {
 
         <TouchableOpacity
             style={estilos.Botao} 
+            onPress={createUser}
             title="Logar">
         </TouchableOpacity>
         </View>
