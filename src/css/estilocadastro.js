@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const estilos = StyleSheet . create({
+const estilos = StyleSheet.create({
 
   containerPrincipal:{
     backgroundColor:"#00c8ff",
@@ -16,7 +16,7 @@ const estilos = StyleSheet . create({
   },
   
   area: {
-    flexDirection:"row",
+    flexDirection:'row',
     backgroundColor: '#ffffff',
     borderRadius: 70, 
     height:120,
@@ -30,9 +30,9 @@ const estilos = StyleSheet . create({
     fontWeight: 'bold',
     alignSelf: 'center',
     margin: 20,
-   },
+  },
 
-   caixasTexto:{
+  caixasTexto:{
     borderColor:'white',
     backgroundColor: '#ffffff',
     borderWidth: 2,
@@ -41,9 +41,9 @@ const estilos = StyleSheet . create({
     borderRadius: 50,
     marginTop: 20,
     marginHorizontal: 10,
-   },
+  },
 
-   caixaSenha:{
+  caixaSenha:{
     borderColor:'#ffffff',
     backgroundColor: '#ffffff',
     borderWidth: 2, 
@@ -52,10 +52,10 @@ const estilos = StyleSheet . create({
     borderRadius: 50,
     marginTop: 20,
     marginHorizontal: 10,
-   },
-   
-   Botao:{
-    backgroundColor:"white",
+  },
+  
+  Botao:{
+    backgroundColor:'#ffffff',
     width:250,
     height:60,
     marginTop:30,
@@ -66,7 +66,7 @@ const estilos = StyleSheet . create({
   },
 
   textoBotao:{
-    color: 'black',
+    color: '#000000',
     fontSize:15,
     fontWeight:'bold',
     alignSelf: 'center',

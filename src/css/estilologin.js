@@ -51,7 +51,7 @@ const estilos = StyleSheet.create({
     },
 
     Botao:{
-      backgroundColor:'white',
+      backgroundColor:'#ffffff',
     width:250,
     height:60,
     marginTop:30,
@@ -62,7 +62,7 @@ const estilos = StyleSheet.create({
     },
 
     textoBotao:{
-      color: 'black',
+      color: '#000000',
       fontSize: '15px',
       fontWeight:'bold',
       alignSelf: 'center',

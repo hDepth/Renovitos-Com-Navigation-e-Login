@@ -71,7 +71,7 @@ export default function Cadastro( {navigation} ) {
         <TouchableOpacity 
         onPress={() => navigation.navigate('Login')}
         style={estilos.Botao}>
-          <Text style={estilos.textoBotao}>Entrar</Text>
+        <Text style={estilos.textoBotao}>Entrar</Text>
         </TouchableOpacity>
         </View>
         </View>
