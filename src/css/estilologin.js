@@ -1,54 +1,52 @@
-import {StyleSheet} from 'react-native';
-
+import { StyleSheet } from "react-native";
 
 const estilos = StyleSheet.create({
+  containerPrincipal: {
+    flex: 1,
+    flexDirection: "column",
+  },
 
-    containerPrincipal:{
-      flex:1,
-      flexDirection: 'column',
-    },
+  imagemFundo: {
+    flex: 1,
+    resizeMode: "cover",
+    width: "auto",
+    height: "auto",
+  },
 
-    imagemFundo:{
-        flex: 1,
-        resizeMode: 'cover',
-        width: 'auto',
-        height: 'auto',
-      },
+  title: {
+    color: "#000000",
+    fontSize: 30,
+    fontWeight: "bold",
+    margin: 20,
+  },
 
-    title:{
-      color:'#000000',
-      fontSize: '30px',
-      fontWeight: 'bold',
-      margin: 20,
-    },
+  imagemLogo: {
+    width: 200,
+    height: 200,
+    left: 60,
+    top: 10,
+    borderRadius: 50,
+  },
 
-    imagemLogo:{
-      width: 200,
-      height:200,
-      left:60,
-      top:10,
-      borderRadius: 50,
-    },
+  caixaEmail: {
+    backgroundColor: "#ffffff",
+    borderWidth: 2,
+    padding: 15,
+    fontSize: 18,
+    borderRadius: 50,
+    marginTop: 20,
+    marginHorizontal: 10,
+  },
 
-    caixaEmail:{
-      backgroundColor: '#ffffff',
-      borderWidth: 2,
-      padding: 15,
-      fontSize: '18px',
-      borderRadius: 50,
-      marginTop: 20,
-      marginHorizontal: 10,
-    },
-
-    caixaSenha:{
-      backgroundColor: '#ffffff',
-      borderWidth: 2, 
-      padding: 15,
-      fontSize: '18px',
-      borderRadius: 50,
-      marginTop: 20,
-      marginHorizontal: 10,
-    },
+  caixaSenha: {
+    backgroundColor: "#ffffff",
+    borderWidth: 2,
+    padding: 15,
+    fontSize: 18,
+    borderRadius: 50,
+    marginTop: 20,
+    marginHorizontal: 10,
+  },
 
     Botao:{
       backgroundColor:'#ffffff',
@@ -62,12 +60,12 @@ const estilos = StyleSheet.create({
     },
 
     textoBotao:{
-      color: '#000000',
-      fontSize: '15px',
+      color: 'black',
+      fontSize: 15,
       fontWeight:'bold',
       alignSelf: 'center',
     }
 
   })
 
-  export default estilos;
+export default estilos;

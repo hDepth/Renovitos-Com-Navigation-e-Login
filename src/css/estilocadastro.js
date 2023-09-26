@@ -1,6 +1,6 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from "react-native";
 
-const estilos = StyleSheet.create({
+const estilos = StyleSheet . create({
 
   containerPrincipal:{
     backgroundColor:"#00c8ff",
@@ -8,13 +8,13 @@ const estilos = StyleSheet.create({
     flexDirection: "column",
   },
 
-  title:{
-    color:'#000000',
+  title: {
+    color: "#000000",
     fontSize: 55,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     margin: 20,
   },
-  
+
   area: {
     flexDirection:'row',
     backgroundColor: '#ffffff',
@@ -22,10 +22,11 @@ const estilos = StyleSheet.create({
     height:120,
     width: 260,
     marginTop: 50,
-    alignSelf: 'center', 
+    alignSelf: 'center',
   },
-  titleArea:{
-    color:'#000000',
+
+  titleArea: {
+    color: '#000000',
     fontSize: 50,
     fontWeight: 'bold',
     alignSelf: 'center',
@@ -52,9 +53,9 @@ const estilos = StyleSheet.create({
     borderRadius: 50,
     marginTop: 20,
     marginHorizontal: 10,
-  },
-  
-  Botao:{
+},
+
+Botao:{
     backgroundColor:'#ffffff',
     width:250,
     height:60,
@@ -71,19 +72,20 @@ const estilos = StyleSheet.create({
     fontWeight:'bold',
     alignSelf: 'center',
   },
-    container: {
-        flex: 1,
-        justifyContent:"center",
-        alignItems: "center"
-    },
-    input: {
-        borderBottomWidth: 1,
-        borderBottomColor: '#313131',
-        marginTop: 5,
-        width: '80%',
-        height: 50
-    }
 
-})
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  input: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#313131",
+    marginTop: 5,
+    width: "80%",
+    height: 50,
+  },
+});
 
 export default estilos;
